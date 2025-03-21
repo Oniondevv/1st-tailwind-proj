@@ -1,0 +1,261 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Stylesheet -->
+    <link href="../dist/styles.css" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  </head>
+
+</head>
+<body>
+  <header>
+    <nav class="bg-gray-800">
+      <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+        <div class="relative flex h-16 items-center justify-between">
+          <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+            <!-- Mobile menu button -->
+            <button id="mobile-menu-button" type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:ring-2 focus:ring-white focus:outline-hidden focus:ring-inset" aria-controls="mobile-menu" aria-expanded="false">
+              <span class="absolute -inset-0.5"></span>
+              <span class="sr-only">Open main menu</span>
+              <!-- Hamburger Icon when menu is closed -->
+              <svg id="burger-icon" class="block size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+              <!-- X Icon when menu is open -->
+              <svg id="close-icon" class="hidden size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+          <div class="flex flex-1 items-center justify-center sm:items-center sm:justify-center">
+            <div class="hidden sm:ml-6 sm:block">
+              <div class="flex space-x-4">
+                <a href="#" class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white" aria-current="page">Home</a>
+                <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Orders</a>
+                <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Sign-in</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Mobile menu, show/hide based on menu state -->
+      <div class="sm:hidden" id="mobile-menu">
+        <div class="space-y-1 px-2 pt-2 pb-3">
+          <a href="#" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page">Home</a>
+          <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Orders</a>
+          <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Sign-in</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+  
+
+  <main class="p-5">
+    <div class="grid grid-cols-[repeat(auto-fit,_minmax(250px,_1fr))] gap-5">
+      
+      <!-- First Product Card -->
+      <div class="border border-[#ddd] rounded-[20px] p-2 shadow-[5px_15px_25px_black]">
+        <div class="flex items-center justify-center mb-4">
+          <img src="images/black-hoodie-updated.png" alt="Hoodie Photo" class="w-1/2 rounded-lg transform transition-transform duration-300 hover:scale-110">
+        </div>
+        <div class="font-semibold text-lg mb-2">Mens Pocket Drawstring Hoodie</div>
+        <div class="text-sm text-gray-600 mb-2">Elevate your style and comfort with our must-have Pocket Drawstring Hoodie, perfect for every season.</div>
+        <div class="text-2xl font-bold mb-2">$25.99</div>
+        <div class="mb-2">
+          <div class="text-xl text-orange-500">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+          <div class="text-sm text-gray-600">(1000+ Reviews)</div>
+        </div>
+
+        <div class="flex items-center  gap-2 ">
+          <p class="text-[15px] font-bold">Size:</p>
+          <div class="w-[45px]  border border-black rounded-[15px]  text-center cursor-pointer hover:text-orange-500 active:text-orange-500">M</div>
+          <div class="w-[45px]  border border-black rounded-[15px]  text-center cursor-pointer hover:text-orange-500">L</div>
+          <div class="w-[45px]  border border-black rounded-[15px]  text-center cursor-pointer hover:text-orange-500">XL</div>
+          <div class="w-[45px]  border border-black rounded-[15px]  text-center cursor-pointer hover:text-orange-500">XXL</div>
+
+        </div>
+        <div class="colors mt-4">
+          <p class="text-[15px] font-bold">Color:</p>
+          <div class="color-option bg-itim"></div>
+          <div class="color-option bg-berde"></div>
+          <div class="color-option bg-kayumanggi"></div>
+          <div class="color-option bg-asul"></div>
+        
+        </div>
+        <div class="flex items-center mb-3 mt-4">
+          <p class="text-[15px] font-bold">Quantity:</p>
+          <input type="number" min="1" max="15" value="1" class="w-8 h-6 text-sm font-medium ml-2 border border-black rounded-[5px] text-center">
+        </div>
+        <div class="flex gap-2 mt-2">
+          <button class="bg-white text-black text-xs font-bold uppercase rounded-[8px] border border-black w-64 h-8 hover:bg-gray-200 transition-colors">Add to Cart</button>
+          <button class="bg-black text-white text-xs font-bold uppercase rounded-[8px] border border-black w-64 h-8 hover:bg-[#36454F] transition-colors">Buy Now</button>
+        </div>
+      </div>
+
+         <!-- Second Product Card -->
+         <div class="border border-[#ddd] rounded-[20px] p-2 shadow-[5px_15px_25px_black]">
+          <div class="flex items-center justify-center mb-4">
+            <img src="images/green-hoodie.png" alt="Hoodie Photo" class="w-1/2 rounded-lg transform transition-transform duration-300 hover:scale-110">
+          </div>
+          <div class="font-semibold text-lg mb-2">Mens Pocket Drawstring Hoodie</div>
+          <div class="text-sm text-gray-600 mb-2">Elevate your style and comfort with our must-have Pocket Drawstring Hoodie, perfect for every season.</div>
+          <div class="text-2xl font-bold mb-2">$25.99</div>
+          <div class="mb-2">
+            <div class="text-xl text-orange-500">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+            <div class="text-sm text-gray-600">(1000+ Reviews)</div>
+          </div>
+  
+          <div class="flex items-center  gap-2 ">
+            <p class="text-[15px] font-bold">Size:</p>
+            <div class="w-[45px]  border border-black rounded-[15px]  text-center cursor-pointer hover:text-orange-500 active:text-orange-500">M</div>
+            <div class="w-[45px]  border border-black rounded-[15px]  text-center cursor-pointer hover:text-orange-500">L</div>
+            <div class="w-[45px]  border border-black rounded-[15px]  text-center cursor-pointer hover:text-orange-500">XL</div>
+            <div class="w-[45px]  border border-black rounded-[15px]  text-center cursor-pointer hover:text-orange-500">XXL</div>
+  
+          </div>
+          <div class="colors mt-4">
+            <p class="text-[15px] font-bold">Color:</p>
+            <div class="color-option bg-itim"></div>
+            <div class="color-option bg-berde"></div>
+            <div class="color-option bg-kayumanggi"></div>
+            <div class="color-option bg-asul"></div>
+          
+          </div>
+          <div class="flex items-center mb-3 mt-4">
+            <p class="text-[15px] font-bold">Quantity:</p>
+            <input type="number" min="1" max="15" value="1" class="w-8 h-6 text-sm font-medium ml-2 border border-black rounded-[5px] text-center">
+          </div>
+          <div class="flex gap-2 mt-2">
+            <button class="bg-white text-black text-xs font-bold uppercase rounded-[8px] border border-black w-64 h-8 hover:bg-gray-200 transition-colors">Add to Cart</button>
+            <button class="bg-black text-white text-xs font-bold uppercase rounded-[8px] border border-black w-64 h-8 hover:bg-[#36454F] transition-colors">Buy Now</button>
+          </div>
+        </div>
+           <!-- Third Product Card -->
+      <div class="border border-[#ddd] rounded-[20px] p-2 shadow-[5px_15px_25px_black]">
+        <div class="flex items-center justify-center mb-4">
+          <img src="images/brown-hoodie.png" alt="Hoodie Photo" class="w-1/2 rounded-lg transform transition-transform duration-300 hover:scale-110">
+        </div>
+        <div class="font-semibold text-lg mb-2">Mens Pocket Drawstring Hoodie</div>
+        <div class="text-sm text-gray-600 mb-2">Elevate your style and comfort with our must-have Pocket Drawstring Hoodie, perfect for every season.</div>
+        <div class="text-2xl font-bold mb-2">$25.99</div>
+        <div class="mb-2">
+          <div class="text-xl text-orange-500">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+          <div class="text-sm text-gray-600">(1000+ Reviews)</div>
+        </div>
+
+        <div class="flex items-center  gap-2 ">
+          <p class="text-[15px] font-bold">Size:</p>
+          <div class="w-[45px]  border border-black rounded-[15px]  text-center cursor-pointer hover:text-orange-500 active:text-orange-500">M</div>
+          <div class="w-[45px]  border border-black rounded-[15px]  text-center cursor-pointer hover:text-orange-500">L</div>
+          <div class="w-[45px]  border border-black rounded-[15px]  text-center cursor-pointer hover:text-orange-500">XL</div>
+          <div class="w-[45px]  border border-black rounded-[15px]  text-center cursor-pointer hover:text-orange-500">XXL</div>
+
+        </div>
+        <div class="colors mt-4">
+          <p class="text-[15px] font-bold">Color:</p>
+          <div class="color-option bg-itim"></div>
+          <div class="color-option bg-berde"></div>
+          <div class="color-option bg-kayumanggi"></div>
+          <div class="color-option bg-asul"></div>
+        
+        </div>
+        <div class="flex items-center mb-3 mt-4">
+          <p class="text-[15px] font-bold">Quantitys:</p>
+          <input type="number" min="1" max="15" value="1" class="w-8 h-6 text-sm font-medium ml-2 border border-black rounded-[5px] text-center">
+        </div>
+        <div class="flex gap-2 mt-2">
+          <button class="bg-white text-black text-xs font-bold uppercase rounded-[8px] border border-black w-64 h-8 hover:bg-gray-200 transition-colors">Add to Cart</button>
+          <button class="bg-black text-white text-xs font-bold uppercase rounded-[8px] border border-black w-64 h-8 hover:bg-[#36454F] transition-colors">Buy Now</button>
+        </div>
+      </div>
+         <!-- Fourth Product Card -->
+         <div class="border border-[#ddd] rounded-[20px] p-2 shadow-[5px_15px_25px_black]">
+          <div class="flex items-center justify-center mb-4">
+            <img src="images/dusty-blue.png" alt="Hoodie Photo" class="w-1/2 rounded-lg transform transition-transform duration-300 hover:scale-110">
+          </div>
+          <div class="font-semibold text-lg mb-2">Mens Pocket Drawstring Hoodie</div>
+          <div class="text-sm text-gray-600 mb-2">Elevate your style and comfort with our must-have Pocket Drawstring Hoodie, perfect for every season.</div>
+          <div class="text-2xl font-bold mb-2">$25.99</div>
+          <div class="mb-2">
+            <div class="text-xl text-orange-500">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+            <div class="text-sm text-gray-600">(1000+ Reviews)</div>
+          </div>
+  
+          <div class="flex items-center  gap-2 ">
+            <p class="text-[15px] font-bold">Size:</p>
+            <div class="w-[45px]  border border-black rounded-[15px]  text-center cursor-pointer hover:text-orange-500 active:text-orange-500">M</div>
+            <div class="w-[45px]  border border-black rounded-[15px]  text-center cursor-pointer hover:text-orange-500">L</div>
+            <div class="w-[45px]  border border-black rounded-[15px]  text-center cursor-pointer hover:text-orange-500">XL</div>
+            <div class="w-[45px]  border border-black rounded-[15px]  text-center cursor-pointer hover:text-orange-500">XXL</div>
+  
+          </div>
+          <div class="colors mt-4">
+            <p class="text-[15px] font-bold">Color:</p>
+            <div class="color-option bg-itim"></div>
+            <div class="color-option bg-berde"></div>
+            <div class="color-option bg-kayumanggi"></div>
+            <div class="color-option bg-asul"></div>
+          
+          </div>
+          <div class="flex items-center mb-3 mt-4">
+            <p class="text-[15px] font-bold">Quantity:</p>
+            <input type="number" min="1" max="15" value="1" class="w-8 h-6 text-sm font-medium ml-2 border border-black rounded-[5px] text-center">
+          </div>
+          <div class="flex gap-2 mt-2">
+            <button class="bg-white text-black text-xs font-bold uppercase rounded-[8px] border border-black w-64 h-8 hover:bg-gray-200 transition-colors">Add to Cart</button>
+            <button class="bg-black text-white text-xs font-bold uppercase rounded-[8px] border border-black w-64 h-8 hover:bg-[#36454F] transition-colors">Buy Now</button>
+          </div>
+        </div>
+      
+     
+  
+
+
+    </div>
+  </main>
+</body>
+</html>
+
+
+<!-- JavaScript to toggle the mobile menu, icons, and reset on desktop view -->
+<script>
+  // Get the button, mobile menu, and icons
+  const mobileMenuButton = document.getElementById('mobile-menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const burgerIcon = document.getElementById('burger-icon');
+  const closeIcon = document.getElementById('close-icon');
+
+  // Add event listener for button click
+  mobileMenuButton.addEventListener('click', function() {
+    const isMenuVisible = mobileMenu.style.display === 'block';
+
+    if (isMenuVisible) {
+      mobileMenu.style.display = 'none';
+      mobileMenuButton.setAttribute('aria-expanded', 'false');
+      burgerIcon.classList.remove('hidden');  // Show burger icon
+      closeIcon.classList.add('hidden');      // Hide close (X) icon
+    } else {
+      mobileMenu.style.display = 'block';
+      mobileMenuButton.setAttribute('aria-expanded', 'true');
+      burgerIcon.classList.add('hidden');     // Hide burger icon
+      closeIcon.classList.remove('hidden');  // Show close (X) icon
+    }
+  });
+
+  // Detect screen size changes and hide mobile menu on desktop
+  window.addEventListener('resize', function() {
+    if (window.innerWidth >= 1024) {
+      mobileMenu.style.display = 'none'; // Hide mobile menu when screen size is large
+      mobileMenuButton.setAttribute('aria-expanded', 'false');
+      burgerIcon.classList.remove('hidden');  // Ensure burger icon is visible
+      closeIcon.classList.add('hidden');      // Ensure close (X) icon is hidden
+    }
+  });
+</script>
